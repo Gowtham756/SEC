@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        input select{
+            transition: border-color 0.3s;
+        }
+        fieldset{
+            border-radius: 20px;
+            border-color: black;
+            border-width: 3px;
+        }
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: bisque;
+            margin: 60px;
+            padding: 40px;
+            align-items: center;
+        }
+       .container{
+        width: 90%;
+        max-width: 900px;
+        background: antiquewhite;
+        border-radius: 10px;
+        box-shadow: 0px 10px 30px #ff0101;
+       }
+       .sub:hover{
+        background-color: blueviolet;
+       }
+      
+       
+      
+    </style>
+  
+</head>
+<body>
+    
+    <div class="container">
+        <div><h1>Registration form</h1> </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Student Details</legend>
+            <label><h2>Name</h2></label>
+            <input type="name"placeholder="name"><br>
+            <label><h2>Age</h2></label>
+            <input type="age"placeholder="Age"><br>
+            <label><h2>Mail</h2></label>
+            <input type="mail"placeholder="mail"><br>
+            <label><h2>password</h2></label>
+            <input type="password"placeholder="password" required>
+            <label><h2>Hobbies</h2></label>
+            <input type="textarea">
+            <label><h2>Gender</h2></label>
+            <label>male</label>
+            <input type="radio" name="gender">
+            <label>female</label>
+            <input type="radio" name="gender">
+            <label><h2>Languages</h2></label>
+            <label>Telugu</label>
+            <input type="checkbox" name="languages"><br>
+            <label>Hindi</label>
+            <input type="checkbox" name="languages"><br>
+            <label>English</label>
+            <input type="checkbox" name="languages"><br><br>
+            <label>Country</label>
+            <select name="Country" id="Country">
+            <option name="Country">India</option>
+            <option name="Country">Russia</option>
+            <option name="Country">Germany</option>
+        </select><br><br>
+            <input type="submit" class="sub">
+        </fieldset>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

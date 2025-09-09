@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header & Navigation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color:bisque;
+    }
+
+
+    header {
+      background-color: #2176a3;
+      color: hwb(0 10% 60%);
+      padding: 15px 20px;
+    }
+
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      flex-wrap: wrap; 
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px; 
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: rgb(228, 12, 12);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: hsl(201, 100%, 50%);
+    }
+
+    @media (max-width: 600px) {
+      .header-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">Gowtham</div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>protfolio</title>
+    <style>
+        body{
+            font-family: Arial;
+            background-color: #42e6c2;
+        }
+        Header{
+            background-color: rgb(13, 207, 149);
+            color: hsl(3, 87%, 46%);
+            padding: 15px;
+            text-align:center;
+            border-radius: 30px;
+        }
+        nav ul{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            list-style: none;
+            justify-content: center;
+        }
+       nav li{
+            margin: 0 15px;
+           
+        }
+    nav a{
+            color: rgb(56, 12, 139);
+            text-decoration: none;
+            text-align:center;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+
+        }
+        .card{
+            flex:1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+        footer{
+            background-color: rgb(174, 183, 163);
+            color:hwb(0 3% 96%);
+            text-align: center;
+            width: fit-content;
+            margin-left: 500px;
+            
+
+        }
+        @media(max-width:600px){
+            nav ul{
+                flex-display:column;
+                align-items: center;
+            }
+            nav li{
+                margin:10px 0;
+            }
+            .card{
+                flex:1 1 100%;
+                max-width: 100%;
+            }
+        }
+        @media(min-width:601px)and (max-width:1024px){
+        .card{
+            flex:1 1 45%;
+            max-width:45%;
+        }
+    }
+    @media(min-width:1025px){
+        .card{
+            flex:1 1 30%;
+            max-width:30%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header><nav>
+        <div class="header">
+            <div><h1>Gowtham</h1></div>
+            <div>
+                <ul>
+                    <li><a href="@">About</a></li>
+                    <li><a href="@">Projects</a></li>
+                    <li><a href="@">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+        
+        <div class="Container">
+            <div class="Card"><h2>Project 1</h2><p>Disc</p></div>
+            <div class="Card"><h2>Project 2</h2><p>Disc</p></div>
+            <div class="Card"><h2>Project 3</h2><p>Disc</p></div>
+        </div>
+
+    </main>
+    <footer>
+        <div><span>&copy; GOWTHAM PRIVITE LIMITED</span></div>
+    </footer>
+    
+</body>
+</html>
