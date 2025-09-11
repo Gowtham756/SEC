@@ -1,0 +1,25 @@
+.header{
+    background-color: black;
+    height: 30px;
+    width:100%;
+    margin: 0;
+    padding:0;
+
+}
+.nav{
+    display: flex;
+}
+#id{
+    margin:30px;
+    display: flex;
+    text-decoration:dark black;
+}
+.search{
+    height: 20px;
+    width: 40px;
+    border: 2px;
+    display: flex;
+    margin-top: 30px;
+    background-color: hsl(0, 2%, 52%);
+    
+}
