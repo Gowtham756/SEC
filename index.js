@@ -1,5 +1,5 @@
 function a(){
-    console.log("Hi Welcome!!")
+    alert("Hi Welcome!!")
 }
 const b=document.getElementById('suee');
 b.addEventListener("click",a);

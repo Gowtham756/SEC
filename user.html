@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+    }
+    .div1{
+        background-color: burlywood;
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        margin: auto;
+        margin-top: 160px;
+    }
+    .age{
+        margin-top: 10px;
+        color: black;
+        border-radius: 4px;
+
+    }
+    .name{
+        margin-top: 10px;
+    }
+    .country{
+        margin-top: 10px;
+    }
+    .submit{
+        margin-top: 10px;
+    }
+    #name,label{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #age,label{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="name">
+    <label>Name</label>
+    <input type="text" id="name" placeholder="enter name">
+</div>
+<div class="age">
+    <label>Age</label>
+    <input type="number" id="age" placeholder="enter age">
+    </div>
+    <div class="country">
+    <label>country</label>
+    <input type="text" id="country" placeholder="enter country">
+    </div>
+    <div class="submit">
+    <button onclick="submit()" >submit</button>
+</div>
+    </div>
+    <script>
+     function submit(){
+        let name=document.getElementById("name").value;
+        let age=document.getElementById("age").value;
+        let country=document.getElementById("country").value;
+        //document.querySelector(".result").innerHTML="my name is "+name+" my age is "+age+" i am from "+country;
+     let arry=[{
+        Name:name,
+        Age:age,
+        Country:country
+     }];
+     console.log(JSON.stringify(arry));
+    }
+    </script>
+</body>
+</html>

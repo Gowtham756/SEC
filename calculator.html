@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: hsl(28, 85%, 45%);
+       }
+       .result{
+        margin: 80px;
+        padding:30px;
+        width: 30px;align-items: center;
+        background-color: bisque;
+       }
+    </style>    
+</head>
+<body>
+
+    <label > Enter n1 value:</label>
+    <input type="number" id="n1">&nbsp;&nbsp;
+    <label > Enter n2 value:</label>
+    <input type="number" id="n2">&nbsp;&nbsp;
+
+    <button onclick="add()">sum</button>&nbsp;&nbsp;
+    <button onclick="diff()">diff</button>&nbsp;&nbsp;
+    <button onclick="pro()">pro</button>&nbsp;&nbsp;
+    <button onclick="div()">div</button>&nbsp;&nbsp;
+    <div class="result">
+    </div>
+    <script>
+
+        function add(){
+            let n1=Number(document.getElementById("n1").value);
+            let n2=Number(document.getElementById("n2").value)
+            let sum=n1+n2
+        document.querySelector(".result").innerText=sum;
+       }
+        function diff(){
+            let n1=Number(document.getElementById("n1").value);
+            let n2=Number(document.getElementById("n2").value)
+            let diff=n1-n2
+        document.querySelector(".result").innerText=diff
+       }
+        function pro(){
+            let n1=Number(document.getElementById("n1").value);
+            let n2=Number(document.getElementById("n2").value)
+            let pro=n1+n2
+        document.querySelector(".result").innerText=pro
+       }
+       function div(){
+            let n1=Number(document.getElementById("n1").value);
+            let n2=Number(document.getElementById("n2").value)
+            let div=n1/n2
+        document.querySelector(".result").innerText=div
+       }
+
+
+       
+
+    </script>
+</body>
+</html>
