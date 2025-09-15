@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: solid black;
+  padding: 20px;
+  background: #ff811acf;
+}
+#joke{
+    background: hwb(0 17% 23%);
+    color: #1b1b1b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#next{
+    background: hwb(0 16% 16%);
+    color: #1b1b1b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#joke:hover {
+    background: hwb(210 11% 11%);
+        color: hsl(236, 100%, 97%);
+        font-size: 17px;
+        border-radius: 10px solid black;
+}
+#next:hover {
+    background: hwb(210 11% 11%);
+        color: hsl(236, 100%, 97%);
+        font-size: 17px;
+        border-radius: 10px solid black;
+}
+#result{
+    margin-top: 20px;
+    size: 10px;
+    font-size: 18px;
+    background-color: hwb(11 24% 20%);
+    color: black;
+    border-radius: 10px;
+}
+.section{
+    background: #c7a3a3;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 5px 15px #e10d0ddf;
+}
+  
+    </style>
+</head>
+<body>
+    <h1>DailyDose of Joke</h1><br><br>
+    <section class="section">
+        
+        <div class="container">
+        <div id="result"></div>
+    </section>
+        <button onclick="getjoke()" id="joke">Joke</button>&nbsp;&nbsp;&nbsp;
+        <button onclick="nextjoke()" id="next">Next</button>
+        </div>
+    
+    
+    <script>
+        function getjoke(){
+            let url=`https://official-joke-api.appspot.com/random_joke`
+            fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+                document.getElementById("result").innerHTML = `<h3>${data.setup}</h3><br><h4>${data.punchline}</h4>`;
+            });}
+            function nextjoke(){
+                let url=`https://official-joke-api.appspot.com/random_joke`
+                fetch(url)
+                .then((response) => response.json())
+                .then((data) => {
+                    document.getElementById("result").innerHTML = `<h3>${data.setup}</h3><br><h4>${data.punchline}</h4>`;
+                });}
+            
+    </script>
+</body>
+</html>

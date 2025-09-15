@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <style>
         body {
@@ -22,7 +22,8 @@ section {
   margin: 20px auto;
   border-radius: 10px;
   max-width: 400px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px #e10d0ddf;
+ 
 }
 
 input, button {
@@ -50,9 +51,12 @@ button:hover {
   background: #0056b3;
 }
 
-#weather {
+#Weather {
   margin-top: 20px;
   font-size: 18px;
+  background-color: hwb(0 81% 9%);
+  color: black;
+  border-radius: 10px;
 }
     </style>
 </head>
@@ -64,6 +68,6 @@ button:hover {
         <button id="fetchBtn">GET Weather</button>
         <div id="Weather"></div>
     </section>
-    <script src="json.js"></script>
+    <script src="weather.js"></script>
 </body>
 </html>
